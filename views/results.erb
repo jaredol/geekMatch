@@ -1,0 +1,11 @@
+<% @profiles.each do |p| %>
+  <%= p.fullname %>
+  <%= p.age %>
+  <a href="/profiles/<%= p.id %>"><img src="<%= p.image_url %>" alt=""></a>
+<% end %>
+
+
+
+
+
+

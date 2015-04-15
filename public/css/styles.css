@@ -1,0 +1,53 @@
+img {
+  max-width: 200px; 
+}
+
+
+h1 {
+  font-family: monospace;
+}
+
+.hearts {
+  color: red;
+  font-size:1.4em;
+}
+
+/* Home Search */
+
+.home_form {
+  position:absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width:300px;
+  text-align: center;
+}
+
+.home_form div {
+  text-align: center;
+}
+
+.home_form select {
+  margin-bottom: .8em;
+  background: #eee;
+}
+
+.home_form label {
+  display: block;
+  padding-bottom: .3em;
+  font-size: .7em;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.home_form button {
+  padding:.5em .2em;
+  background: red;
+  color: #fff;
+  border: none;
+  width:120px;
+  border-radius: 5px;
+  margin-top: 1em;
+
+}
+
