@@ -2,10 +2,12 @@ CREATE DATABASE geek_match;
 
   CREATE TABLE profiles(
       id SERIAL4 PRIMARY KEY,
+      username VARCHAR(200),
       gender VARCHAR(200),
-      fullname VARCHAR(200) NOT NULL,
+      email VARCHAR(200),
+      full_name VARCHAR(200) NOT NULL,
+      profile_desc VARCHAR(200),
       age INTEGER,
-      age_range VARCHAR,
       image_url VARCHAR(200)
   );
 
@@ -24,3 +26,8 @@ VALUES ('Female', 'The Queen', 93, 'http://i.dailymail.co.uk/i/pix/2009/10/07/ar
 # add column
 ALTER TABLE profiles ADD age_range
 VARCHAR;
+
+INSERT INTO users (email, password_digest)
+VALUES ('jared@mail.com', 'password');
+
+

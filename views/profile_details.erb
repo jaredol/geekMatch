@@ -1,1 +1,6 @@
-the full profile template
+
+<%= @profile.username %>
+<%= @profile.age %>
+<%= @profile.profile_desc %>
+
+<a href="/profiles/<%= @profile.id %>"><img src="<%= @profile.image_url %>" alt=""></a>

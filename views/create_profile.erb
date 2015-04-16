@@ -1,6 +1,38 @@
-<form action="" method="">
+<form class="form_signup" action="/profiles" method="post">
   
-  
+  <div class="form_row">
+      <label for="username">Username</label>
+      <input id="username" type="text" name="username">
+  </div>
+  <div class="form_row">
+      <label for="full_name">Name</label>
+      <input id="full_name" type="text" name="full_name">
+  </div>
+  <div class="form_row">
+    <select name="gender">
+         <option value="Male">Male</option>
+         <option value="Female">Female</option>
+    </select>
+  </div>
+
+  <div class="form_row">
+      <label for="email">Email</label>
+      <input id="email" type="email" name="email">
+  </div>
+  <div class="form_row">
+      <label for="password">Password</label>
+      <input id="password" type="password" name="password">
+  </div>
+  <div class="form_row">
+      <label for="age">Age</label>
+      <input id="age" type="text" name="age">
+  </div>
+  <div class="form_row">
+      <label for="profile_desc">Description</label>
+      <textarea id="profile_desc" name="profile_desc"></textarea>
+  </div>
+
+  <button>Sign me up...</button>
 
 </form>
 

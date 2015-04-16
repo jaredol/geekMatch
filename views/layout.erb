@@ -3,10 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="/css/styles.css">
-  <title>Hello World</title>
+  <title>&hearts; Geek Match &hearts;</title>
 </head>
 <body>
-  <p><a href="/">Home</a></p>
-  <%= yield %>
+  <% if logged_in? %>
+
+  <p>logged in as <%= current_user.email %></p>
+
+  <p>
+      <form action="/session" method="post">
+          <input type="hidden" name="_method" value="delete">
+          <button>logout</button>
+      </form>
+  </p>
+
+  <% else %>
+
+
+   <a href="/session/new">login</a>
+
+   <% end %>
+   <p><a href="/">Home</a></p>
+   
+   <%= yield %>
 
 </body>

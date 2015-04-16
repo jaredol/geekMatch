@@ -48,6 +48,37 @@ h1 {
   width:120px;
   border-radius: 5px;
   margin-top: 1em;
+}
+
+/* Forms general */
+
+button:hover {
+  cursor: pointer;
+}
+
+/* Signup Form */
+
+.form_signup label {
+  display: block;
+}
+
+.form_signup input,
+.form_signup textarea {
+  border:1px solid #ccc;
+  background: #f9f9f9;
+  padding:.3em;
+  min-width: 15em;
+}
+
+.form_signup textarea {
+  min-width: 25em;
+  min-height: 6em;
+}
+
+.form_signup select {
 
 }
 
+.form_signup .form_row {
+  margin:0 0 1em 0;
+}
