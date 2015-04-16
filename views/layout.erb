@@ -2,9 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/reset.css">
+ <!--  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" /> -->
   <link rel="stylesheet" href="/css/styles.css">
+  
   <title>&hearts; Geek Match &hearts;</title>
 </head>
+
 <body>
   <% if logged_in? %>
 
@@ -20,11 +28,35 @@
   <% else %>
 
 
-   <a href="/session/new">login</a>
+   <!-- <a class="show-login" href="/session/new">login</a> -->
+   <p><a class="show_login" href="">login</a></p>
+   <p><a href="/profiles/new">Create a profile</a></p>
 
    <% end %>
    <p><a href="/">Home</a></p>
    
-   <%= yield %>
+   
+<div class="wrapper">
+    <h1>geek_Match<span class="hearts">&hearts;</span></h1>
+    <%= yield %>
 
+   <form class="form_login" action="/session" method="post">
+        <h2>Log-in</h2>
+      <div class="form_row">
+        <span class="close glyphicon glyphicon-remove" aria-hidden="true"></span>
+         
+          <label for="email">email</label>
+          <input placeholder="email" id="email" class="form-control" type="text" name="email">
+      </div>
+      <div class="form_row">
+          <label for="password">password</label>
+          <input placeholder="password" class="form-control" id="password" type="password" name="password">
+      </div>
+       <button class="btn btn-danger">login</button>
+    </form>
+
+</div>
+
+   <script src="/js/jquery.js"></script>
+   <script src="/js/app.js"></script>
 </body>

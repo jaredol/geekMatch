@@ -27,6 +27,7 @@ VALUES ('Female', 'The Queen', 93, 'http://i.dailymail.co.uk/i/pix/2009/10/07/ar
 ALTER TABLE profiles ADD age_range
 VARCHAR;
 
+
 INSERT INTO users (email, password_digest)
 VALUES ('jared@mail.com', 'password');
 

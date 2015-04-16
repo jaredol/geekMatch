@@ -1,14 +1,12 @@
-
-<div class="wrapper">
-
-    <p><a href="/profiles/new">Create a profile</a></p>
+    <h2>Sign Up</h2>
+    
 
     <div class="home_form">
 
-        <h1>geek_Match <span class="hearts">&hearts;</span></h1>
+        
         <h4>I'm looking for...</h4>
 
-      <form action="/results" method="get">
+      <form class="form_search" action="/results" method="get">
         <div>
             <label for="gender">Gender:</label>
             <select name="gender">
@@ -20,7 +18,7 @@
             <label for="age">Age:</label>
             <select name="age">
                 <option value="20-25">20 - 25</option>
-                <option value="25-30">25 - 30</option>
+                <option value="25-30" selected>25 - 30</option>
                 <option value="30-35">30 - 35</option>
                 <option value="35-40">35 - 40</option>
                 <option value="40-45">40 - 45</option>
@@ -37,10 +35,8 @@
             </select>
         </div>
         <div>
-            <button>get...</button>
+            <button class="btn btn-danger">Search...</button>
         </div>
       </form>
 
     </div>
-
-</div>

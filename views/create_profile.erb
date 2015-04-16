@@ -1,12 +1,14 @@
+<h1>Signup</h1>
+
 <form class="form_signup" action="/profiles" method="post">
   
   <div class="form_row">
       <label for="username">Username</label>
-      <input id="username" type="text" name="username">
+      <input placeholder="Username" class="form-control" id="username" type="text" name="username">
   </div>
   <div class="form_row">
       <label for="full_name">Name</label>
-      <input id="full_name" type="text" name="full_name">
+      <input placeholder="Name" class="form-control" id="full_name" type="text" name="full_name">
   </div>
   <div class="form_row">
     <select name="gender">
@@ -17,22 +19,26 @@
 
   <div class="form_row">
       <label for="email">Email</label>
-      <input id="email" type="email" name="email">
+      <input placeholder="Email" class="form-control" id="email" type="email" name="email">
   </div>
   <div class="form_row">
       <label for="password">Password</label>
-      <input id="password" type="password" name="password">
+      <input placeholder="Password" class="form-control" id="password" type="password" name="password">
   </div>
   <div class="form_row">
       <label for="age">Age</label>
-      <input id="age" type="text" name="age">
+      <input placeholder="Age" class="form-control" id="age" type="text" name="age">
+  </div>
+  <div class="form_row">
+      <label for="image_url">Photo</label>
+      <input placeholder="Photo" class="form-control" id="age" type="text" name="image_url">
   </div>
   <div class="form_row">
       <label for="profile_desc">Description</label>
-      <textarea id="profile_desc" name="profile_desc"></textarea>
+      <textarea placeholder="Brief description..." id="profile_desc" name="profile_desc" class="form-control" rows="5"></textarea>
   </div>
 
-  <button>Sign me up...</button>
+  <button class="btn btn-danger">Sign me up...</button>
 
 </form>
 

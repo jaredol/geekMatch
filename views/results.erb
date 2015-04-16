@@ -1,12 +1,17 @@
+<div class="profile_wrap">
 
 <% @profiles.each do |p| %>
 
+<div class="profile"> 
+  <div class="user_img"><a href="/profiles/<%= p.id %>"><img src="<%= p.image_url %>" alt=""></a></div>
   <p class="user_name"><a href="/profiles/<%= p.id %>"><%= p.username %></a></p>
   <p class="user_age"><%= p.age %></p>
-  <div class="user_img"><a href="/profiles/<%= p.id %>"><img src="<%= p.image_url %>" alt=""></a></div>
-
+  
+</div>
 
 <% end %>
+
+</div>
 
 
 
