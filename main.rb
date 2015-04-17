@@ -10,7 +10,7 @@ enable :sessions
 
 
 local_db_settings = {
-  adapter => 'postgresql'
+  adapter: 'postgresql',
   database: 'geek_match'
 }
 
