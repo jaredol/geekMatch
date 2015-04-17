@@ -1,8 +1,6 @@
 require 'sinatra'
-require 'sinatra/reloader'
 require 'httparty'
 require 'pg' # for postgresql database
-require 'pry'
 require 'bcrypt'
 
 require_relative 'config'
