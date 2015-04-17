@@ -9,11 +9,14 @@ require_relative 'profile'
 enable :sessions
 
 
+local_db_settings = {
+  adapter => 'postgresql'
+  database: 'geek_match'
+}
+
+
 # database config
-ActiveRecord::Base.establish_connection(
-  :adapter => 'postgresql',
-  :database => 'geek_match'
-  ) 
+ActiveRecord::Base.establish_connection(ENV['DATABASE_URL'] || local_db_settings)
 
 ActiveRecord::Base.logger = Logger.new (STDERR)   # show
 
