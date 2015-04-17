@@ -29,6 +29,14 @@ h1 {
    text-align: center;
 }
 
+h2 {
+   font-family: 'PT Sans Caption', sans-serif;
+   font-size: 2.5em;
+   margin-bottom: .5em;
+   color:#fff;
+   text-align: center;
+}
+
 h4 { font-size:1.5em; }
 
 .home_form h4 { text-align: center; }
@@ -50,8 +58,17 @@ button:hover {
    cursor: pointer;
 }
 
+select {
+   font-size:1.5em!important;
+   color:#999!important;
+   text-indent: .3em;
+}
+
 
 /* *********** Home Search ********** */
+
+h1 a { color:#082b47; }
+h1 a:hover { text-decoration: none; }
 
 .hearts {
    color: red;
@@ -100,7 +117,17 @@ button:hover {
 }
 
 
- /* *********** Login Form ********** */ 
+ /* *********** Login Form ********** */
+
+ .login_wrap {
+   position: absolute;
+   right:15px;
+   top:1em;
+ }
+
+ .login_wrap  .glyphicon {
+   font-size:1.1em;
+ }
 
 
 .form_login {
@@ -110,10 +137,18 @@ button:hover {
   margin-left: -150px;  /* this value should be half the width of the container */
   top:-100%;
   background-color: #e9e9e9;
+  background:#124b78;
   box-shadow: 0 3px 10px rgba(0,0,0,.5);
   padding: 3em 1em 1em 1em;
   border-radius: 0 0 10px 10px
 }
+
+.form_login h2 {
+   font-size:1.9em;
+   color: #fff;
+   opacity:.8;
+   margin:0 0 .3em 0;
+}  
 
 .form_login .form_row {
    margin:0 0 1em 0;
@@ -141,6 +176,8 @@ button:hover {
    right:1em;
    font-size: 1.4em;
    margin-bottom: 4em;
+   color:#fff;
+   opacity:.6;
 }
 
 .close:hover {
@@ -212,6 +249,11 @@ button:hover {
    margin-right: 0;
 }
 
+ .user_img {
+   max-height: 127px;
+   overflow: hidden;
+} 
+
 .profile img {
    max-width:100%;
 }
@@ -228,6 +270,35 @@ button:hover {
 }
 
 
+ /* *********** Profile page ********** */
+
+.profile_detail {
+   background: #eee;
+   min-height: 150px;
+   padding:1em;
+   overflow: hidden;
+}
+
+ .profile_detail h2 {
+   font-size:2em;
+ }
+
+.profile_detail .age {
+   font-size:2em;
+ }
+
+.profile_photo {
+   float: left;
+   margin: 0 1em 0 0em;
+}
+
+.profile_detail .profile_desc {
+   margin-top:1em;
+}
+
+.profile_detail .btn-success {
+   margin-top:.5em;
+}
 
 
 /* Bootstrap Overides */

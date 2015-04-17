@@ -1,6 +1,10 @@
+<div class="profile_detail">
+  <div class="profile_photo">
+    <a href="/profiles/<%= @profile.id %>"><img src="<%= @profile.image_url %>" alt=""></a>
+  </div>
+<h2><%= @profile.username %></h2>
+<p class="age"><%= @profile.age %></p>
+<p class="profile_desc"><%= @profile.profile_desc %></p>
+<button type="button" class="btn btn-success btn-xs">Contact <%= @profile.username %></button>
 
-<%= @profile.username %>
-<%= @profile.age %>
-<%= @profile.profile_desc %>
 
-<a href="/profiles/<%= @profile.id %>"><img src="<%= @profile.image_url %>" alt=""></a>
